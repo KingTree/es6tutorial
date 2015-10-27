@@ -64,14 +64,7 @@ let foo = 2;
 
 上面代码在声明`foo`之前，就使用这个变量，结果会抛出一个错误。
 
-这也意味着`typeof`不再是一个百分之百安全的操作。
 
-```javascript
-typeof x; // ReferenceError
-let x;
-```
-
-上面代码中，由于块级作用域内`typeof`运行时，`x`还没有值，所以会抛出一个`ReferenceError`。
 
 ### 暂时性死区
 
